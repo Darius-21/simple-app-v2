@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_tickets",
+  "info": {
+    "name": "customerTicket",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "transaction": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "WorkingOn",
+        "Finished"
+      ]
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_log_update_logs",
+  "info": {
+    "name": "updateLogs",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "text"
+    },
+    "proof": {
+      "type": "richtext"
+    },
+    "updateDate": {
+      "type": "date"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

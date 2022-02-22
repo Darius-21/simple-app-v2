@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_seekers",
+  "info": {
+    "name": "jobSeeker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "wage": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0",
+      "default": "0"
+    },
+    "wageUnit": {
+      "type": "enumeration",
+      "enum": [
+        "perPerson",
+        "perJob"
+      ]
+    },
+    "numberOfPeople": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "min": 1
+    },
+    "expireDate": {
+      "type": "date"
+    },
+    "timeFinish": {
+      "type": "integer"
+    },
+    "timeFinishUnit": {
+      "type": "enumeration",
+      "enum": [
+        "Hours",
+        "Days",
+        "Weeks",
+        "Months",
+        "Years"
+      ]
+    },
+    "bonusDesc": {
+      "type": "text"
+    },
+    "category": {
+      "model": "category"
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_desc": {
+      "type": "text"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}

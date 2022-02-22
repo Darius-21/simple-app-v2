@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sub_category_sub_categories",
+  "info": {
+    "name": "sub-category",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "coverImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

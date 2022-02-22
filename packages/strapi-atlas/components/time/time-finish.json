@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_time_time_finishes",
+  "info": {
+    "name": "timeFinish",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true,
+      "default": 2
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "Days",
+        "Weeks",
+        "Months",
+        "Years"
+      ],
+      "required": true,
+      "default": "Weeks"
+    }
+  }
+}

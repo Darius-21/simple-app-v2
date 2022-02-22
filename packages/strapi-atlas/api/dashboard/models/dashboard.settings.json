@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboards",
+  "info": {
+    "name": "dashboard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "totalJobs": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "totalMoneyMade": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "totalJobCompleted": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "totalJobInProgress": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "totalJobBuy": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    }
+  }
+}

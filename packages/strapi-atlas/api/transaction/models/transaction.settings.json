@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transaction",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seeker": {
+      "via": "transactions",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "job": {
+      "model": "job"
+    },
+    "note": {
+      "type": "string"
+    },
+    "pickedOption": {
+      "type": "component",
+      "repeatable": false,
+      "component": "option.job-option"
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "paid",
+        "unpaid"
+      ],
+      "default": "unpaid"
+    },
+    "checkout_session": {
+      "type": "string"
+    },
+    "transactionStatus": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "WorkingOn",
+        "Finish",
+        "Cancel"
+      ],
+      "default": "New"
+    },
+    "updatedLogs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "log.update-logs"
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "freelancer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "expireDate": {
+      "type": "date"
+    }
+  }
+}

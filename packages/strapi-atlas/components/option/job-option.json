@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_option_job_options",
+  "info": {
+    "name": "jobOption",
+    "icon": "bookmark"
+  },
+  "options": {},
+  "attributes": {
+    "optionName": {
+      "type": "string",
+      "required": true,
+      "default": "Basic"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "wage": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    }
+  }
+}

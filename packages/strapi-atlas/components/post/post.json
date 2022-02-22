@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_post_posts",
+  "info": {
+    "name": "Post",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "coverImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

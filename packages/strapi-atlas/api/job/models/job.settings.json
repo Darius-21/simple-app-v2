@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "JobFreelancer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "startingPrice": {
+      "type": "biginteger"
+    },
+    "timeFinish": {
+      "type": "integer"
+    },
+    "timeFinishUnit": {
+      "type": "enumeration",
+      "enum": [
+        "Hours",
+        "Days",
+        "Weeks",
+        "Months",
+        "Years"
+      ]
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rating.rating"
+    },
+    "option": {
+      "type": "component",
+      "repeatable": true,
+      "component": "option.job-option"
+    },
+    "category": {
+      "via": "job",
+      "model": "category"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_desc": {
+      "type": "text"
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_address_billing_addresses",
+  "info": {
+    "name": "billingAddress",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "houseNumber": {
+      "type": "string"
+    },
+    "houseStreet": {
+      "type": "string"
+    },
+    "District": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    }
+  }
+}

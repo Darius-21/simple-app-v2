@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "navigations",
+  "info": {
+    "name": "Navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "collection": "category"
+    }
+  }
+}

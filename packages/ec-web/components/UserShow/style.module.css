@@ -1,0 +1,108 @@
+.u-layout-cell-4 {
+    min-height: 120px;
+}
+
+.u-layout-cell-5 {
+    min-height: 120px;
+}
+
+.u-container-layout-6 {
+    padding: 30px 16px 0 0;
+}
+
+.u-text-3 {
+    font-size: 1.5rem;
+    margin: 0 -8px 0 8px;
+}
+
+@media (max-width: 1199px) {
+    .u-layout-cell-4 {
+        min-height: 118px;
+    }
+
+    .u-text-3 {
+        font-size: 1.125rem;
+    }
+
+    .u-layout-cell-5 {
+        min-height: 118px;
+    }
+    
+    .u-image-1 {
+        height: 38px;
+        width: 38px;
+        margin-left: 19px;
+    }
+}
+
+@media (max-width: 991px) {
+    .u-layout-cell-4 {
+        min-height: 110px;
+    }
+
+    .u-container-layout-6 {
+        padding-top: 15px;
+        padding-right: 0;
+    }
+
+    .u-layout-cell-5 {
+        min-height: 100px;
+    }
+
+    .u-text-3 {
+        width: auto;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .u-image-1 {
+        height: 86px;
+        width: 86px;
+        margin-top: -93px;
+        margin-right: -128px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-layout-cell-4 {
+        min-height: 68px;
+    }
+
+    .u-container-layout-6 {
+        padding-top: 0;
+    }
+
+    .u-text-3 {
+        margin-top: -1176px;
+    }
+
+    .u-image-1 {
+        height: 158px;
+        width: 158px;
+        margin-top: -1282px;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .u-layout-cell-4 {
+        min-height: 43px;
+    }
+
+    .u-text-3 {
+        margin-top: -1043px;
+    }
+
+    .u-image-1 {
+        margin-top: -131px;
+    }
+}
+
+.u-image-1 {
+    height: 69px;
+    width: 69px;
+    background-image: url("D:/Uit/HK4/Web/simple-app/packages/ec-web/public/LamThanhTin_image.jpg");
+    background-position: 50% 50%;
+    margin: 0 auto;
+}

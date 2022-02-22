@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "birthday": {
+      "type": "date",
+      "default": "1989-12-31T17:00:00.000Z",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "default": "Other"
+    },
+    "occupations": {
+      "type": "text"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "interests": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rating.rating"
+    },
+    "certificates": {
+      "type": "text"
+    },
+    "skills": {
+      "type": "text"
+    },
+    "job_freelancers": {
+      "collection": "job"
+    },
+    "job_seekers": {
+      "collection": "job-seeker"
+    },
+    "favorite_jobs": {
+      "collection": "job"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

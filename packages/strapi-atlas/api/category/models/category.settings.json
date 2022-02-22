@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "coverImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "job": {
+      "via": "category",
+      "model": "job"
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_desc": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkout_infos",
+  "info": {
+    "name": "checkoutInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cardNumber": {
+      "type": "string"
+    },
+    "cardType": {
+      "type": "enumeration",
+      "enum": [
+        "Visa",
+        "MasterCard"
+      ]
+    },
+    "billingAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.billing-address"
+    },
+    "user": {
+      "via": "checkout_info",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

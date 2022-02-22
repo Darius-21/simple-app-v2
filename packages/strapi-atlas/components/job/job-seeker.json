@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_job_job_seekers",
+  "info": {
+    "name": "jobSeeker",
+    "icon": "city",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "numberOfPeople": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "wage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "wage.wage"
+    },
+    "timeFinish": {
+      "type": "component",
+      "repeatable": false,
+      "component": "time.time-finish"
+    },
+    "timeExpired": {
+      "type": "date"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "category": {
+      "model": "category"
+    }
+  }
+}

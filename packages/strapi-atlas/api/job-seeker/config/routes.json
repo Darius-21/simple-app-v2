@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/job-seekers",
+      "handler": "job-seeker.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/job-seekers/count",
+      "handler": "job-seeker.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/job-seekers/:id",
+      "handler": "job-seeker.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/job-seekers",
+      "handler": "job-seeker.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/job-seekers/:id",
+      "handler": "job-seeker.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/job-seekers/:id",
+      "handler": "job-seeker.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

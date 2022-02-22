@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_job_job_freelancers",
+  "info": {
+    "name": "jobFreelancer",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "startingPrice": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    },
+    "jobOption": {
+      "type": "component",
+      "repeatable": true,
+      "component": "option.job-option"
+    },
+    "timeFinish": {
+      "type": "component",
+      "repeatable": false,
+      "component": "time.time-finish"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "category": {
+      "model": "category"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rating.rating"
+    }
+  }
+}

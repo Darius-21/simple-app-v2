@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_wage_wages",
+  "info": {
+    "name": "wage",
+    "icon": "dollar-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "wage": {
+      "type": "string",
+      "required": true
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "Job",
+        "Person"
+      ],
+      "default": "Job",
+      "required": true
+    }
+  }
+}

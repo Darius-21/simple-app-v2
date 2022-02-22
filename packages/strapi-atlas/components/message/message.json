@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_message_messages",
+  "info": {
+    "name": "message",
+    "icon": "comment-dots"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}

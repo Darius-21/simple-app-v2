@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutuses",
+  "info": {
+    "name": "aboutUs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "developersDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "developer.developer"
+    }
+  }
+}

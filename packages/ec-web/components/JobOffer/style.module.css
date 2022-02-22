@@ -1,0 +1,48 @@
+.job-offer.box{
+    border: 1px solid black;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    min-width: 80px;
+    background-color: white;
+    border-collapse: collapse;
+}
+.box-title{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #CCAAFF;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.box-title>h1{
+    color: width;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.job-offer{
+    list-style-type: none;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+.job-offer>ul>li>label{
+    color: #CCAAFF;
+    margin: 10px;
+}
+.job-offer>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    align-items:center;
+}
+.job-offer>ul>li>*{
+    flex:1;
+}
+.submitbtn{
+    display: block;
+    width: 20%;
+    margin: auto;
+}

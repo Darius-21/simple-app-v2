@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_rating_ratings",
+  "info": {
+    "name": "rating",
+    "icon": "certificate",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rating": {
+      "type": "float",
+      "max": 5,
+      "min": 0,
+      "default": 5
+    },
+    "comment": {
+      "type": "text"
+    },
+    "fromUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
