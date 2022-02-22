@@ -1,8 +1,8 @@
 # Introduction
 **Contributors:**
 1. *Huỳnh Phương Như* - Leader / Build / Document
-2. *Lâm Thành Tín* - Design
-3. *Nguyễn Văn Dũng* - Document
+2. *Lâm Thành Tín* - Design / Document
+3. *Nguyễn Văn Dũng* - Design / Document
 
 You can see the web's details in Product Document [here](./ProductDocument.pdf)
 
